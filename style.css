@@ -5,6 +5,7 @@ html{
     background-color: rgba(248, 249, 250 ,1) !important;
 
 }
+
 .main{
     max-width: 1400px;
     width: 100%;
@@ -126,6 +127,7 @@ a.brand-logo{
     /* width: 95%; */
     overflow: hidden;
     position: relative;
+    margin-bottom: 1.2rem;
     /* border: 2px solid black; */
 }
 .p-y-xl{
@@ -134,10 +136,32 @@ a.brand-logo{
 
 }
 .service-background{
+    background-image: url(./assets/admin\ ai\ suite.png);
+    display: block;
+    height: 100%;
+    width: 94%;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease;
+    position: absolute;
+}
+.service-background1{
+    background-image: url(./assets/service3.png);
+    display: block;
+    height: 100%;
+    width: 94%;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease;
+    position: absolute;
+}
+.service-background2{
     background-image: url(./assets/laptop.png);
     display: block;
     height: 100%;
-    width: 100%;
+    width: 94%;
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -154,4 +178,53 @@ a.brand-logo{
     .sticky{
         position: static;
     }
+}
+.about-image{
+ max-width: 60%;
+ max-height: 50%;
+}
+.about-image-thumb{
+    margin-bottom: -25%;
+}
+@media (max-width:1065px) {
+    .about-sidebar{
+        visibility: hidden;
+        width: 0;
+        height: 0
+    }
+}
+@media (max-width:574px) {
+    .about-sidebar{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+footer{
+    /* background-color: black !important; */
+    /* outline: 2px solid black; */
+    padding-top: 10rem;
+}
+.copyright-text{
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #000000;
+}
+#footer{
+    background-color: black !important;
+margin-top: 10rem;   
+    background-color: #000000;
+}
+
+.black{
+    background-color: #000000 !important;
+    color: #cccccc !important;
+}
+.p-zero{
+    margin: 0px !important;
+    padding: 1.5rem;
+    /* padding-top: ; */
+}
+.p-zero .black{
+    margin-bottom: 0rem;
 }
