@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary navbarcustomize">
     <div class="container-fluid">
       <a class="navbar-brand brand-logo" href="#">Alex Turnwall</a>
@@ -21,12 +26,13 @@
           <a class="nav-link navoptions" href="#blog">Blog</a>
           <a class="nav-link navoptions" href="#service">Service</a>
           <a class="nav-link navoptions" href="#about">About</a>
-          
         </div>
       </div>
     </div>
   </nav>
-  <div class="container main">
+  <!-- MAIN CONTAINER -->
+ <div class="container main">
+  <!-- HOME -->
   <section id="#home">
       <div class="content homepage container">
         <div class="content-title">
@@ -39,248 +45,306 @@
           <div class="row p-lg-top">
             <div class="col-xs-12 col-lg-2"></div>
             <div class="col-xs-12 col-sm-10 col-md-5 col-lg-4">
-             <p class="p">I've spent over a decade working with teams to ship products that delight users and advance organizations’ goals. Learn More</p> 
+             <p class="p">I've spent over a decade working with teams to ship products that delight users and advance organizations’ goals.<a class="link">Learn More</a> </p> 
             </div>
             <div class="col-xs-12 col-sm-10 col-md-5 col-lg-4">
               <p class="p">
-                Staff UX Design Lead @Verily. Previously Head of Design @Admithub, Chief Design Officer @BevSpot, Lecturer @Northeastern
+                Staff UX Design Lead @Verily. Previously Head of Design <a class="link">@Admithub</a>,Chief Design Officer <a class="link">@BevSpot</a>, Lecturer @Northeastern
               </p>
             </div>
-      
           </div>
         </div>
       </div>
-      
   </section>
+  <!-- BLOG -->
   <div id="blog"class="content post container">
     <hr class="rule-lg">
+    <!-- POST TITLE -->
     <div class="row">
-      <div class="col-sm-2 col-lg-2 p-r-md sticky" style="height: 96%;">
-        <span class="section-title">Select Post</span>
-        <p>All Post</p>
-      </div>
-       <div class="col-xs-12 col-md-10">
-        <div class="row row-10">
-          <div class="col-sm-6 col-sm-7 col-xs-12">
-            <p class="postcategories">Design</p>
-            <h4 class="posttitle">
-              Bicycles are my design inspiration—a Rapha 5×5 talk
-            </h4>
-            <p class="p">
-              I was recently invited to speak at an event called Rapha 5×5: Intervals on Design at Fresh Tilled Soil, a local design consultancy. It’s a traveling series of design talks that Rapha runs in different cities, and here’s the schtick: “5×5: Intervals on Design, a rapid-fire design talk where five creatives will talk for five minutes…
-            </p>
-            <p class="post footer">8 minute read</p>
-          </div>
-          <div class="col-md-4 col-sm-5 col-xs-12">
-            <img src="./assets/Artboard-1-360x240.png" alt="Bicycle image">
-          </div>
-        </div>
-        <hr class="rule-md">
-        
-        <div class="row row-10">
-          <div class="col-sm-6 col-md-7 col-xs-12">
-            <p class="postcategories">ADVENTURE</p>
-            <h4 class="posttitle">
-              Talking to a giant tanker from a little plastic boat
-            </h4>
-            <p class="p">
-              It’s kayaking season here in New England, and as I was returning to the water this year I realized I needed to reacquaint myself with VHF radio usage. So I’m going to share this story from last summer in hopes that it helps some other kayakers in a similar situation, as I haven’t found a ton…
-            </p>
-            <p class="post footer">8 minute read</p>
-          </div>
-          <div class="col-md-5 col-sm-6 col-xs-12">
-            <img src="./assets/boat.jpg" alt="Bicycle image">
-          </div>
-        </div>
-        <hr class="rule-md">
-        
-        <div class="row row-10">
-          <div class="col-sm-6 col-sm-7 col-xs-12">
-            <p class="postcategories">DESIGN</p>
-            <h4 class="posttitle">
-              Paying homage to (or stealing from) your inspiration
-            </h4>
-            <p class="p">
-              I had an idea for the new version of my site: I was going to illustrate objects using only HTML and CSS ( to show that I know how to do stuff with code), and make them look like they were neatly organized in a physical space* (which seems vaguely trendy) according to the underlying grid…                  
-            </p>
-            <p class="post footer">5 minute read</p>
-          </div>
-          <div class="col-md-4 col-sm-5 col-xs-12">
-            <img src="./assets/tickle.jpg" alt="Bicycle image">
-          </div>
-        </div>
+       <div class="content-title">
+         Blog
+       </div>
+       <div class="content-subtitle">
+         Infrequent writing about things like adventure, business, code,<br> design, making, musings, updates, worklife, and more.
        </div>
     </div>
+    <hr class="rule-lg">
+    <div class="row">
+      <!-- POST SIDE BAR -->
+       <div class="col-sm-2 col-lg-2 p-r-md sticky" style="height: 96%;">
+         <span class="section-title">Select Post</span>
+         <p><a class="link p">All Post</a></p>
+       </div>
+       <!-- POST CONTENTS -->
+       <div class="col-xs-12 col-md-10">
+          <div class="row row-10">
+              <div class="col-lg-6">
+                 <p class="postcategories">Design</p>
+                 <h4 class="posttitle">
+                    Bicycles are my design inspiration—a Rapha 5×5 talk
+                 </h4>
+                 <p class="p">
+                    I was recently invited to speak at an event called Rapha 5×5: Intervals on Design at Fresh Tilled Soil, a local design consultancy. It’s a traveling series of design talks that Rapha runs in different cities, and here’s the schtick: “5×5: Intervals on Design, a rapid-fire design talk where five creatives will talk for five minutes…
+                 </p>
+                 <p class="post footer">8 minute read</p>
+              </div>
+              <div class="col-lg-1">
+              </div>
+              <div class="col-lg-5">
+                <img class="post-img" src="./assets/Artboard-1-360x240.png"  alt="Bicycle image">
+              </div>
+          </div>
+          <hr class="rule-md">
+          <div class="row row-10">
+            <div class="col-lg-6">
+              <p class="postcategories">ADVENTURE</p>
+              <h4 class="posttitle">
+               Talking to a giant tanker from a little plastic boat
+              </h4>
+              <p class="p">
+               It’s kayaking season here in New England, and as I was returning to the water this year I realized I needed to reacquaint myself with VHF radio usage. So I’m going to share this story from last summer in hopes that it helps some other kayakers in a similar situation, as I haven’t found a ton…
+              </p>
+              <p class="post footer">8 minute read</p>
+            </div>
+            <div class="col-lg-1">
+            </div>
+            <div class="col-lg-5">
+              <img class="post-img" src="./assets/boat.jpg" alt="Bicycle image">
+            </div>
+          </div>
+          <hr class="rule-md">
+          <div class="row row-10">
+            <div class="col-lg-6">
+              <p class="postcategories">DESIGN</p>
+              <h4 class="posttitle">
+                Paying homage to (or stealing from) your inspiration
+              </h4>
+              <p class="p">
+                I had an idea for the new version of my site: I was going to illustrate objects using only HTML and CSS ( to show that I know how to do stuff with code), and make them look like they were neatly organized in a physical space* (which seems vaguely trendy) according to the underlying grid…                  
+              </p>
+              <p class="post footer">5 minute read</p>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+             <img class="post-img"  src="./assets/tickle.jpg" alt="Boat image">
+            </div>
+          </div>
+        </div>
+    </div>
   </div>
+  <!-- SERVICE -->
   <div id="service" class="content service container">
+      <hr class="rule-lg">
+      <!-- SERVICE TITLE -->
+      <div class="row">
+         <div class="content-title">
+           Service
+         </div>
+         <div class="content-subtitle">
+            Weaving together UX, UI, and brand design with product <br>management and frontend development.
+         </div>
+      </div>
+      <hr class="rule-lg">
+      <!-- SERVICE CONTENT -->
+      <div class="row">
+          <!-- SERVICE SIDEBAR -->
+          <div class="col-sm-2 col-lg-2 p-r-md sticky" style="height: 96%;">
+            <span class="section-title">Select Service</span>
+            <p><a class="link p">All Service</a></p>
+          </div>
+          <!-- SERVICE ITEMS -->
+           <div class="col-md-10">
+            <div class="row">
+              <div class="col-sm-8 image-thumb">
+                <span class=" service-background">
+                </span>
+              </div>
+              <div class="col-sm-4">
+                <p class="postcategories">CASE STUDY</p>
+                <h4 class="posttitle">
+                   Admit AI Suite
+                </h4>
+                <p class="p">
+                   Leading product design and user research pf the SaaS platform helping educators use behavorial science to nudge students towrds success
+                </p>
+                <p class="postfooter">5 minute read</p>
+              </div>
+              <hr class="rule-lg">
+            </div>
+           </div>
+           <div class="col-md-2"></div>
+  
+           <div class="col-md-10">
+           <div class="row">
+             <div class="col-sm-8 image-thumb">
+                 <span class=" service-background1">
+                 </span>
+             </div>
+             <div class="col-sm-4">
+                <p class="postcategories">CASE STUDY</p>
+                <h4 class="posttitle">
+                   Connected Proof
+                </h4>
+                <p class="p">
+                   Design the cross device software for industrial Iot platform to help make food and beverages production more sustainable
+                </p>
+                <p class="postfooter">5 minute read</p>
+             </div>
+             <hr class="rule-lg">
+           </div>
+           </div>
+           <div class="col-md-2"></div>
+           <div class="col-md-10">
+                <div class="row">
+                   <div class="col-sm-8 image-thumb">
+                      <span class=" service-background2">
+                      </span>
+                   </div>
+                   <div class="col-sm-4">
+                     <p class="postcategories">CASE STUDY</p>
+                     <h4 class="posttitle">
+                        BevSpot Inventory
+                     </h4>
+                     <p class="p">
+                        Leading the UX evolution of an industry-favorite app by working closely with customers and “taking over” their jobs for the day
+                     </p>
+                     <p class="postfooter">5 minute read</p>
+                   </div>
+                 </div>
+            </div>
+       </div>
+        
+         
+
+  </div>
+  <!-- IMAGE SLIDER -->
+  <div id="image-slider" class="content image-slider container">
     <hr class="rule-lg">
     <div class="row">
       <div class="content-title">
-       Service
+       Archives
       </div>
       <div class="content-subtitle">
-        Weaving together UX, UI, and brand design with product <br>management and frontend development.
+        Samples Picture
       </div>
     </div>
       <hr class="rule-lg">
-      <div class="row">
-        <div class="col-sm-2 col-lg-2 p-r-md sticky" style="height: 96%;">
-          <span class="section-title">Select Service</span>
-          <p>All Service</p>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./assets/travelweb.avif" alt="First slide" style="width: 80%;">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/s2.avif" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/s3.avif" alt="Third slide">
+          </div>
         </div>
-         <div class="col-md-10">
-          
-          <div class="row">
-           <div class="col-sm-8 image-thumb">
-             <span class=" service-background">
-            </span>
-           </div>
-            <div class="col-sm-4">
-              <p class="postcategories">CASE STUDY</p>
-              <h4 class="posttitle">
-               Admit AI Suite
-              </h4>
-              <p class="p">
-               Leading product design and user research pf the SaaS platform helping educators use behavorial science to nudge students towrds success
-              </p>
-              <p class="post footer">5 minute read</p>
-            </div>
-            <hr class="rule-lg">
-          </div>
-
-         </div>
-         <div class="col-md-2"></div>
-         <div class="col-md-10">
-          
-          <div class="row">
-           <div class="col-sm-8 image-thumb">
-             <span class=" service-background1">
-            </span>
-           </div>
-            <div class="col-sm-4">
-              <p class="postcategories">CASE STUDY</p>
-              <h4 class="posttitle">
-             Connected Proof
-              </h4>
-              <p class="p">
-              Design the cross device software for industrial Iot platform to help make food and beverages production more sustainable
-              </p>
-              <p class="post footer">5 minute read</p>
-            </div>
-            <hr class="rule-lg">
-          </div>
-
-         </div>
-         <div class="col-md-2"></div>
-         <div class="col-md-10">
-          
-          <div class="row">
-           <div class="col-sm-8 image-thumb">
-             <span class=" service-background2">
-            </span>
-           </div>
-            <div class="col-sm-4">
-              <p class="postcategories">CASE STUDY</p>
-              <h4 class="posttitle">
-               BevSpot Inventory
-              </h4>
-              <p class="p">
-                Leading the UX evolution of an industry-favorite app by working closely with customers and “taking over” their jobs for the day
-              </p>
-              <p class="post footer">5 minute read</p>
-            </div>
-            <hr class="rule-lg">
-          </div>
-
-         </div>
-        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
         
          
 
   </div>
-
-
-
+  <!-- ABOUT -->
   <div id="about" class="content about container">
-    <hr class="rule-lg">
-    <div class="row">
-      <div class="col-lg-9">
-        <div class="content-title">
-          ABOUT
+        <hr class="rule-lg">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="content-title">
+              ABOUT
+            </div>
+            <div class="content-subtitle">
+              Designer, developer, and product strategist trying <br>to move the needle.
+            </div>
          </div>
-         <div class="content-subtitle">
-           Designer, developer, and product strategist trying <br>to move the needle.
-         </div>
-      </div>
-      <span class="col-lg-3 about-image-thumb">
-     <img class="about-image" src="./assets/alex.png" alt="">
-      </span>
-      
-    </div>
+         <span class="col-lg-3 about-image-thumb">
+             <img class="about-image" src="./assets/alex.png" alt="">
+         </span>
+       </div>
       <hr class="rule-lg">
       <div class="row">
-        <div class="col-sm-2 col-lg-2 p-r-md sticky" style="height: 96%;">
-          <!-- <span class="section-title">Select Service</span> -->
-          
-        </div>
-         <div class="col-md-2"></div>
-         <div class="col-md-10">
-          
-          <div class="row">
-            <div class="col-sm-2 about-sidebar sticky" style="height: 96%;">
-              <span class="section-title">About</span>
-              <p><p>Modus Operandi</p>
-              <p>Experience</p>
-              <p>Expertise</p>
-              <p>Consulting</p>
-              <p>Contact</p></p>
-            </div>
-           <div class="col-sm-8">
-             <p class="p">My professional work slants towards product design that can make a measurable impact. Usability over style. Stylish when called for.</p>
-             <p class="p">Learning from your customers and shipping delightful, yet useful tools for them is both rewarding and challenging, which is why I've been drawn to working with early products, especially those where you can get to know your users personally.</p>
-             <p class="p">I’ve been called a ‘pragmatic’ designer.
-              I take that as a compliment.</p>
-             <p class="p">I’ve had the privilege of working with some great teams on some truly impactful products, and have learned a thing or two along the way. I bring that experience to new ventures and try to share it with folks through mentoring and writing.</p>
-            <p class="p">I tend to think about design like a founder, because I’ve been one. Balancing process and instinct, the goal is to find harmony between user delight and business strategy, as fast as you can deliver quality.</p>
-            <p class="p">If this seems like your cup of tea, I'd be pleased to chat about your project needs. My availability is below.</p>
-            <p class="p">-Alex-</p>  
+          <div class="col-sm-2 col-lg-2 p-r-md sticky" style="height: 96%;">
           </div>
-          
-          <div class="col-sm-2">
-            <p class="p">alex@turnwall.com<br>
-              linkedin <br>/alexturnwall</p>
-          </div>
-            <!-- <hr class="rule-lg"> -->
-          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-10">
+              <div class="row">
+                 <div class="col-sm-2 about-sidebar sticky" style="height: 96%;">
+                    <span class="section-title">About</span>
+                    <p><p>Modus Operandi</p>
+                    <p>Experience</p>
+                    <p>Expertise</p>
+                    <p>Consulting</p>
+                    <p>Contact</p></p>
+                 </div>
+                 <div class="col-sm-8">
+                    <p class="p">My professional work slants towards product design that can make a measurable impact. Usability over style. Stylish when called for.</p>
+                    <p class="p">Learning from your customers and shipping delightful, yet useful tools for them is both rewarding and challenging, which is why I've been drawn to working with early products, especially those where you can get to know your users personally.</p>
+                    <p class="p">I’ve been called a ‘pragmatic’ designer.
+                       I take that as a compliment.</p>
+                    <p class="p">I’ve had the privilege of working with some great teams on some truly impactful products, and have learned a thing or two along the way. I bring that experience to new ventures and try to share it with folks through mentoring and writing.</p>
+                    <p class="p">I tend to think about design like a founder, because I’ve been one. Balancing process and instinct, the goal is to find harmony between user delight and business strategy, as fast as you can deliver quality.</p>
+                    <p class="p">If this seems like your cup of tea, I'd be pleased to chat about your project needs. My availability is below.</p>
+                    <p class="p">-Alex-</p>  
+                 </div>
+                 <div class="col-sm-2">
+                   <p class="p"><span class="link">alex@turnwall.com</span><br>
+                    linkedin <span class="link">/alexturnwall</span></p>
+                 </div>
+             </div>
 
-         </div>
+          </div>
         </div>
-        
-         
-
   </div>
-  <!-- <div class="p-y-xl"></div> -->
-  <footer id="footer"class="content container">
+</div>
+  <!-- FOOTER -->
+  <footer class="content container-fluid" id="footer">
+   
     <div class="row">
-      <div class="col-lg-2 black p-zero p">Alex Turnwall</div>
+      <div class="p-lg-top black"></div>
+      <div class="col-lg-1 black"></div>
+      <div class="col-lg-1 black p-zero p">Alex Turnwall</div>
       <div class="col-lg-10">
         <div class="row">
           <div class="col-lg-8 p black p-zero">
             I’m a Boston-based designer, developer, and strategist. I consult, write, and speak about design, entrepreneurship and technology. You might also find me biking, kayaking, skiing, woodworking, or brewing.
           </div>
           <br>
-            <div class="col-lg-2 p black p-zero">Get in Touch:<br>Email alex@turnwall.com<br>LinkedIn /alexturnwall</div>
+            <div class="col-lg-4 p black p-zero">Get in Touch:<br>Email alex@turnwall.com<br>LinkedIn ,/alexturnwall</div>
             
           </div>
-        </div>
-       
+      </div>
     </div>
-    <div class="copyright-text">Design and content © 2008-2023 by Alex Turnwall unless otherwise noted, all rights reserved.</div>
+    <div class="row">
+      <div class="p-lg-top black"></div>
+      <div class="copyright-text black">Design and content © 2008-2023 by Alex Turnwall unless otherwise noted, all rights reserved.</div>
+    </div>
+    <div class="p-lg-top"></div>
+  </footer> 
+  <!-- SCRIPT FOR NAVBAR -->
+  <script>
+      var lastscrolltop=0;
+      navbar =  document.getElementsByClassName("navbar")[0];
+    window.addEventListener("scroll",function(){
+      var scrollTop=window.pageYOffset || document.documentElement.scrollTop;
+      if(scrollTop>lastscrolltop){
+        navbar.style.top="-80px";
+      
+      }else{
+        navbar.style.top="0";
+      }
+      lastscrolltop=scrollTop;
+      navbar.classList.add("navbar-sticky",window.scrollY>0)
 
-  </footer>
-  </div>
-  
-
-   
+    })
+  </script>
 </body>
 </html>
