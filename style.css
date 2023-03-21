@@ -1,28 +1,25 @@
+*{
+    background-color: rgba(248, 249, 250 ,1) !important;
+}
 html{
     font-size: 81.25% !important;
 }
-*{
-    background-color: rgba(248, 249, 250 ,1) !important;
-
-}
-
 .main{
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
 }
 .container{
-    /* border: 2px solid black; */
     margin: 0 auto;
     max-width: 1400px;
     padding: 0;
-    width: 88vw;
+    width: 80vw;
 }
 .navbarcustomize{
     padding: 0.7rem 0;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid #848a8a;
     margin: auto;
-    width: 88vw;
+    width: 80vw;
     max-width: 1400px;
 }
 .navbar-brand{
@@ -30,14 +27,12 @@ html{
 }
 .navoptions{
     padding: 1.8rem 0.25rem 1.6rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 a.brand-logo{
     color: #242929 !important;
     font-weight: 700;
 }
-
-
 .homepage{
     padding: 2rem 0 8rem ;
 }
@@ -69,21 +64,6 @@ a.brand-logo{
 .center{
     margin: 0 auto !important;
 }
-@media (min-width: 1200px){
-    .col-lg-2 {
-        grid-column: span 2;
-    }
-}
-@media (max-width:992px){
-    .navbarcustomize{
-        min-width: 100% !important;
-    }
-    a.brand-logo{
-        margin-left: 3rem;
-    }
-}
-
-    
 .rule-lg {
     border: none;
     border-bottom: 4px solid #000000;
@@ -128,7 +108,6 @@ a.brand-logo{
     overflow: hidden;
     position: relative;
     margin-bottom: 1.2rem;
-    /* border: 2px solid black; */
 }
 .p-y-xl{
     padding-top: 5rem;
@@ -168,23 +147,118 @@ a.brand-logo{
     transition: all 0.6s ease;
     position: absolute;
 }
-@media (max-width:767px){
-    .content-title{
-        font-size: 3.2rem;
-    }
-    .content-subtitle{
-        font-size: 2rem;
-    }
-    .sticky{
-        position: static;
-    }
-}
+
 .about-image{
  max-width: 60%;
  max-height: 50%;
 }
 .about-image-thumb{
     margin-bottom: -25%;
+}
+footer{
+    padding-top: 10rem;
+}
+.copyright-text{
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #000000;
+}
+
+.black{
+    background-color:#383E3E !important;
+    color: #cccccc !important;
+}
+.col{
+    outline: 0 !important;
+    border:0 !important;
+}
+.p-zero{
+    margin: 0px !important;
+    padding: 1.5rem;
+    /* padding-top: ; */
+}
+.p-zero .black{
+    margin-bottom: 0rem;
+}
+.post-img{
+    width: 100%;
+}
+.navbar-sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    transition:1s all;
+}
+#footer{
+    padding-top: 1rem;
+}
+.postfooter{
+    color: #848a8a;
+}
+.carousel-control-next-icon {
+    /* background-image:url("./assets/rightarrow.png"); */
+    background-color: transparent !important;
+    width: 30%;
+    height: 10%;
+}
+.carousel-control-prev-icon {
+    /* background-image:url("./assets/white-prev.jpeg"); */
+    background-color: transparent !important;
+    width: 30%;
+    height: 10%;
+}
+.carousel-control-prev ,.carousel-control-next{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+    background-color: transparent !important;
+}
+.sr-only{
+    display: none;
+}
+.link{
+    color: #3e4242;
+    border-bottom: 1.5px solid blue;
+    text-decoration: none;
+}
+
+
+@media (min-width: 1200px){
+    .col-lg-2 {
+        grid-column: span 2;
+    }
+}
+@media (max-width:992px){
+    .navbarcustomize{
+        min-width: 100% !important;
+    }
+    a.brand-logo{
+        margin-left: 3rem;
+    }
+}
+@media (max-width:767px){
+    .content-title{
+        font-size: 3.2rem;
+    }
+    .content-subtitle{
+        font-size: 1.9rem;
+    }
+    .sticky{
+        position: static;
+    }
 }
 @media (max-width:1065px) {
     .about-sidebar{
@@ -200,31 +274,9 @@ a.brand-logo{
         height: 0;
     }
 }
-footer{
-    /* background-color: black !important; */
-    /* outline: 2px solid black; */
-    padding-top: 10rem;
-}
-.copyright-text{
-    text-align: center;
-    padding: 3rem 0;
-    background-color: #000000;
-}
-#footer{
-    background-color: black !important;
-margin-top: 10rem;   
-    background-color: #000000;
-}
-
-.black{
-    background-color: #000000 !important;
-    color: #cccccc !important;
-}
-.p-zero{
-    margin: 0px !important;
-    padding: 1.5rem;
-    /* padding-top: ; */
-}
-.p-zero .black{
-    margin-bottom: 0rem;
+@media (max-width:991px) {
+    .navbar-nav{
+        margin-left: 33px;
+    }
+    
 }
