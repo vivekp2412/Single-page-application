@@ -386,7 +386,7 @@
     function sidebarfunc(){
       
       var navbar = document.getElementsByClassName("navbar-toggler")[0];
-      if(!isopen){
+      if(!issidebaropen){
         document.getElementsByClassName("hamburger")[0].classList.add("sidebaropen");
         document.getElementsByClassName("hamburger")[0].classList.remove("sidebarclose");
         issidebaropen=true
