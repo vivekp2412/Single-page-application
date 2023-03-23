@@ -15,12 +15,10 @@
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navbarcustomize">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbarcustomize desktopnavbar">
     <div class="container-fluid">
       <a class="navbar-brand brand-logo" href="#">Alex Turnwall</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      
       <div class="collapse navbar-collapse rightnav" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link navoptions" href="#blog">Blog</a>
@@ -30,6 +28,41 @@
       </div>
     </div>
   </nav>
+  <!-- MOBILE HEADER -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbarcustomize mobilenavbar">
+    <div class="container-fluid">
+      <a class="navbar-brand brand-logo" href="#">Alex Turnwall</a>
+    </div>
+  </nav>
+  <div>
+    <a class="navbar-toggle toggled hamburgericon" onclick="sidebarfunc()">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+    </a>
+  </div>
+  
+  <div class="hamburger">
+    <div class="content-menu open">
+      <header class="mobile-header ">
+       
+        <ul class="nav-menu">
+          <li>
+            <a class="nav-link navoptions navoption" href="#"><span class="navbar-brand brand-logo"><b>Alex Turnwall</b></span></a>
+          </li>
+          <li>
+            <a class="nav-link  navoptions navoption active" href="#about">About</a>
+          </li>
+          <li>
+            <a class="nav-link navoptions navoption " href="#service">Services</a>
+          </li>
+          <li>
+            <a class="nav-link navoptions navoption" href="#blog">Blog</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+  </div>
   <!-- MAIN CONTAINER -->
  <div class="container main">
   <!-- HOME -->
@@ -342,9 +375,30 @@
         navbar.style.top="0";
       }
       lastscrolltop=scrollTop;
+      if(window.innerWidth >991)
       navbar.classList.add("navbar-sticky",window.scrollY>0)
+      else{
+        navbar.classList.add("navbar-fixed")
+      }
 
     })
+    var issidebaropen=false;
+    function sidebarfunc(){
+      
+      var navbar = document.getElementsByClassName("navbar-toggler")[0];
+      if(!isopen){
+        document.getElementsByClassName("hamburger")[0].classList.add("sidebaropen");
+        document.getElementsByClassName("hamburger")[0].classList.remove("sidebarclose");
+        issidebaropen=true
+      }
+      else{
+        document.getElementsByClassName("hamburger")[0].classList.remove("sidebaropen");
+        document.getElementsByClassName("hamburger")[0].classList.add("sidebarclose");
+       issidebaropen=false
+      }
+   
+
+    }
   </script>
 </body>
 </html>

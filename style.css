@@ -18,7 +18,8 @@ html{
 .navbarcustomize{
     padding: 0.7rem 0;
     border-bottom: 1px solid #848a8a;
-    margin: auto;
+    /* margin-left: 20%; */
+    margin: 0 auto;
     width: 80vw;
     max-width: 1400px;
 }
@@ -41,7 +42,7 @@ a.brand-logo{
     font-family:"Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: 0.5em;
+    margin:0.5em 0.5em;
     letter-spacing: -0.05em;
 }
 .content-subtitle{
@@ -187,7 +188,7 @@ footer{
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 999999;
+    z-index: 10;
     transition:1s all;
 }
 #footer{
@@ -197,13 +198,11 @@ footer{
     color: #848a8a;
 }
 .carousel-control-next-icon {
-    /* background-image:url("./assets/rightarrow.png"); */
     background-color: transparent !important;
     width: 30%;
     height: 10%;
 }
 .carousel-control-prev-icon {
-    /* background-image:url("./assets/white-prev.jpeg"); */
     background-color: transparent !important;
     width: 30%;
     height: 10%;
@@ -234,6 +233,84 @@ footer{
     border-bottom: 1.5px solid blue;
     text-decoration: none;
 }
+.navbar-toggle{
+    position: fixed;
+    right: 0;
+    top: 0%;
+    z-index: 999;
+    height: 53px;
+    width: 60px;
+    color: #000000;
+    background-color: #2d69ad !important;
+    transition: all 0.2s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.one{
+    position:absolute;
+    top: 25%;
+    left: 50%;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    transform: rotate(0deg) translate(-50%,50%);
+}
+
+.two{
+    position:absolute;
+    top: 48%;
+    left: 50%;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    transform: rotate(0deg) translate(-50%,50%);
+}
+.three{
+    position:absolute;
+    top: 70%;
+    left: 50%;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    transform: rotate(0deg) translate(-50%,50%);
+}
+.hamburger{
+    height: 100%;
+    width: 50%;
+    position:fixed;
+    left: 100%;
+    top: 0%;
+    z-index: 999;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.hamburgericon{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+.cancelicon{
+    position: relative;
+
+}
+.sidebaropen{
+    transform: translateX(-99%);
+    transition-duration: 1s;
+    
+}
+.sidebarclose{
+    transform: translateX(99%);
+    transition-duration: 1s;
+    
+}
+.mobilenavbar{
+    display: none;
+    position: fixed;
+    z-index: 99;
+}
 
 
 @media (min-width: 1200px){
@@ -248,6 +325,9 @@ footer{
     a.brand-logo{
         margin-left: 3rem;
     }
+    .sticky{
+        position: static;
+    }
 }
 @media (max-width:767px){
     .content-title{
@@ -256,9 +336,8 @@ footer{
     .content-subtitle{
         font-size: 1.9rem;
     }
-    .sticky{
-        position: static;
-    }
+   
+    
 }
 @media (max-width:1065px) {
     .about-sidebar{
@@ -273,10 +352,49 @@ footer{
         width: 0;
         height: 0;
     }
+   .navbar-toggle{
+    top: 94%;
+   }
 }
 @media (max-width:991px) {
     .navbar-nav{
         margin-left: 33px;
     }
+    .hamburgericon{
+        display: block;
+    }
+    .navbar-sticky{
+        position: fixed;
+        top: 0;
+    }
+    .mobilenavbar{
+        display: block;
+    }
+    .navbarcustomize{
+        margin-left: 0;
+    }
+    .desktopnavbar{
+        display: none;
+    }
     
+}
+@media (min-width:991px) {
+    .hamburger{
+        display: none;
+    }
+  
+}
+.navoption{
+    border-bottom: 1px solid gray;
+}
+ul{
+    list-style-type: none;
+}
+.navbar-brand{
+    padding: 5px;
+    font-size: 1.25rem;
+}
+.navbar-fixed{
+    position: fixed;
+    top: 0;
 }
